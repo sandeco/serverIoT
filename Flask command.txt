@@ -1,0 +1,10 @@
+entrar na pasta do projeto do servidor
+pelo command "cmd"
+
+
+FLASK_APP=server.py flask run
+
+
+
+set FLASK_APP=server.py
+flask run
