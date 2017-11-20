@@ -6,7 +6,6 @@ from flask import request
 app = Flask(__name__)
 
 @app.route("/", methods=['GET'])
-@returns_xml
 def server():
 
     action = request.args.get('action')
