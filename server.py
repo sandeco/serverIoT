@@ -2,8 +2,6 @@
 import pandas as pd
 from flask import Flask
 from flask import request
-from flask import Response
-
 
 app = Flask(__name__)
 
@@ -33,7 +31,4 @@ def server():
         except ValueError:
             retorno = ValueError
 
-    ##return retorno
-    r = Response(response="TEST OK", status=200, mimetype="application/xml")
-    r.headers["Content-Type"] = "text/xml; charset=utf-8"
-    return r
+    return retorno
