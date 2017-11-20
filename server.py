@@ -6,11 +6,10 @@ from flask import Flask
 
 app = Flask(__name__)
 
-nomeArquivo = "sensores.csv"
+nomeArquivo = "sensores.csv" # nome do arquivo em que o valor será salvo
 
 def gravarDados(device, valor): # função para gravar o valor de um sensor (device)
     
-     # nome do arquivo em que o valor será salvo
     try:
         with open(nomeArquivo, 'a', newline='') as arquivo: 
             writer = csv.DictWriter(arquivo, fieldnames=['horario', 'sensor', 'valor'], delimiter=';')        
