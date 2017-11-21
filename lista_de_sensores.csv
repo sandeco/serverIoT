@@ -1,0 +1,4 @@
+id, sensor, tipo, local
+temp01, Sensor de temperatura 01, temperatura, plantação de alface
+humi01, Sensor de humidade 01, humidade, plantação de alface
+
